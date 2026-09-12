@@ -1,4 +1,4 @@
-#### Hi, I'm Tin Nguyen, a software developer from Vietnam.
+### Hi, I'm Tin Nguyen, a software developer from Vietnam.
 
 ---
 
