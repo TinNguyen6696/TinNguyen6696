@@ -38,4 +38,20 @@ project needs.
 
 📧 quoctin06061996@gmail.com  
 📞 0935 487 616
+---
+
+### Full-Stack Developer · Sidepitch
+
+`10/2024 – Present`
+
+Sidepitch is an invite-only fundraising platform built for CitySide Ventures, a
+Michigan-based angel investment firm. It connects startups pitching for capital
+with investors, and handles the deal pipeline behind it — due diligence, capital
+calls, SPV and portfolio management.
+
+- Built responsive web interfaces with React, TypeScript, HTML, and CSS
+- Developed backend features and RESTful APIs in Ruby on Rails with PostgreSQL
+- Contributed to mobile app features using Flutter for iOS and Android
+- Owned features end to end across the stack as the project required
+- Worked in a fast-paced startup, adapting quickly to changing requirements
 
