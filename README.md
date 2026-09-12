@@ -1,8 +1,4 @@
-# Portfolio
-
 Hi, I'm Tin Nguyen, a software developer from Vietnam.
-
----
 
 ## About Me
 
