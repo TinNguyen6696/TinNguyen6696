@@ -36,8 +36,8 @@ project needs.
 
 ## Contact
 
-Email: quoctin06061996@gmail.com  
-Phone: 0935 487 616
+📧 quoctin06061996@gmail.com  
+📞 0935 487 616
 
 ---
 
