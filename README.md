@@ -1,87 +1,45 @@
 # Portfolio
 
-My personal site — projects, writing, and contact.
+Hi, I'm Tin Nguyen, a software developer from Vietnam.
 
-**Live:** [yourname.dev](https://yourname.dev)
+---
 
-![Screenshot of the site homepage](./public/screenshot.png)
+## About Me
 
-## About
+Full-stack web developer. I build things end to end, from the interface down to the database, and
+I've shipped products that real people use. I learn quickly and I'm comfortable with whatever a
+project needs.
 
-A small, deliberately dark-only site built around a single design system rather
-than a component grab-bag. The visual direction follows Depot's marketing system:
-a near-black Radix Mauve canvas with one grass-green accent, three optical cuts of
-the Red Hat type family, and no shadows — depth comes from stepping surface colors
-instead.
+---
 
-The most opinionated piece is the primary button. It uses a dark-green fill with
-grass-green text rather than the conventional bright-fill-on-dark, which reads like
-a passing terminal output line. Everything else in the palette is achromatic so
-that one accent does all the work.
+## Tech Stack
 
-## Stack
+### Frontend
 
-| | |
-|---|---|
-| Framework | Next.js (App Router) |
-| Language | TypeScript |
-| Styling | Tailwind CSS v4 |
-| Components | shadcn/ui |
-| Fonts | Red Hat Display / Text / Mono via `next/font` |
-| Hosting | Vercel |
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
 
-## Running locally
+### Backend
 
-```bash
-git clone https://github.com/yourname/portfolio.git
-cd portfolio
-npm install
-npm run dev
-```
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat&logo=ruby&logoColor=white)
+![Ruby on Rails](https://img.shields.io/badge/Ruby%20on%20Rails-D30001?style=flat&logo=rubyonrails&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 
-Open http://localhost:3000.
+### Database
 
-## Structure
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 
-```
-app/
-  layout.tsx        root layout, font variables, dark class
-  globals.css       design tokens and type scale
-  page.tsx          home
-  projects/         project pages
-components/
-  ui/               shadcn primitives
-content/            project write-ups (MDX)
-public/             images and assets
-```
+---
 
-## Theming
+## Contact
 
-All tokens live in `app/globals.css`. Colors are set once in `:root` and mapped to
-Tailwind utilities through `@theme inline`, so changing the palette means editing
-hex values in one block — component code never references a color directly.
+📧 quoctin06061996@gmail.com  
+📞 0935 487 616
 
-Two things to know before editing:
-
-- Body text uses `text-ink-muted`, not `text-foreground`. Near-white is reserved
-  for headings and emphasis.
-- The system has no shadow tier. Use the `--surface-1` → `--surface-2` →
-  `--surface-3` ladder for elevation instead.
-
-The type scale is exposed as utility classes (`t-display-xl`, `t-body-lg`,
-`t-mono-sm`) that pair each size with its correct font cut and tracking.
-
-## Deploying
-
-Pushes to `main` deploy to production on Vercel. Every other branch gets its own
-preview URL.
-
-## Credits
-
-Design system adapted from [Depot](https://depot.dev). Type by Red Hat, licensed
-under SIL OFL 1.1.
-
-## License
-
-MIT — feel free to borrow the code. Please don't reuse the written content or
-project case studies.
