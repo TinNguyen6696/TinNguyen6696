@@ -24,164 +24,195 @@
    -------------------------------------------------------------------------- */
 
 @theme inline {
-    /* ---- Fonts ---------------------------------------------------------- */
-    --font-display: var(--font-display, "Red Hat Display Variable", "Red Hat Display", ui-sans-serif, system-ui, sans-serif);
-    --font-heading: var(--font-display, "Red Hat Display Variable", "Red Hat Display", ui-sans-serif, system-ui, sans-serif);
-    --font-sans: var(--font-sans, "Red Hat Text Variable", "Red Hat Text", ui-sans-serif, system-ui, sans-serif);
-    --font-mono: var(--font-mono, "Red Hat Mono Variable", "Red Hat Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
+  /* ---- Fonts ---------------------------------------------------------- */
+  --font-display: var(
+    --font-display,
+    "Red Hat Display Variable",
+    "Red Hat Display",
+    ui-sans-serif,
+    system-ui,
+    sans-serif
+  );
+  --font-heading: var(
+    --font-display,
+    "Red Hat Display Variable",
+    "Red Hat Display",
+    ui-sans-serif,
+    system-ui,
+    sans-serif
+  );
+  --font-sans: var(
+    --font-sans,
+    "Red Hat Text Variable",
+    "Red Hat Text",
+    ui-sans-serif,
+    system-ui,
+    sans-serif
+  );
+  --font-mono: var(
+    --font-mono,
+    "Red Hat Mono Variable",
+    "Red Hat Mono",
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    monospace
+  );
 
-    /* ---- shadcn semantic tokens ----------------------------------------- */
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --color-card: var(--card);
-    --color-card-foreground: var(--card-foreground);
-    --color-popover: var(--popover);
-    --color-popover-foreground: var(--popover-foreground);
-    --color-primary: var(--primary);
-    --color-primary-foreground: var(--primary-foreground);
-    --color-primary-border: var(--primary-border);
-    --color-secondary: var(--secondary);
-    --color-secondary-foreground: var(--secondary-foreground);
-    --color-muted: var(--muted);
-    --color-muted-foreground: var(--muted-foreground);
-    --color-accent: var(--accent);
-    --color-accent-foreground: var(--accent-foreground);
-    --color-destructive: var(--destructive);
-    --color-destructive-foreground: var(--destructive-foreground);
-    --color-border: var(--border);
-    --color-input: var(--input);
-    --color-input-background: var(--input-background);
-    --color-ring: var(--ring);
+  /* ---- shadcn semantic tokens ----------------------------------------- */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-border: var(--primary-border);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
 
-    --color-chart-1: var(--chart-1);
-    --color-chart-2: var(--chart-2);
-    --color-chart-3: var(--chart-3);
-    --color-chart-4: var(--chart-4);
-    --color-chart-5: var(--chart-5);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
 
-    --color-sidebar: var(--sidebar);
-    --color-sidebar-foreground: var(--sidebar-foreground);
-    --color-sidebar-primary: var(--sidebar-primary);
-    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-    --color-sidebar-accent: var(--sidebar-accent);
-    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-    --color-sidebar-border: var(--sidebar-border);
-    --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 
-    /* ---- Depot named tokens (Design.md `colors:` block) ------------------ */
-    --color-brand: var(--brand);
-    --color-brand-fill: var(--brand-fill);
-    --color-brand-fill-deep: var(--brand-fill-deep);
-    --color-brand-mid: var(--brand-mid);
-    --color-brand-border: var(--brand-border);
-    --color-brand-strong: var(--brand-strong);
-    --color-brand-subtle: var(--brand-subtle);
+  /* ---- Depot named tokens (Design.md `colors:` block) ------------------ */
+  --color-brand: var(--brand);
+  --color-brand-fill: var(--brand-fill);
+  --color-brand-fill-deep: var(--brand-fill-deep);
+  --color-brand-mid: var(--brand-mid);
+  --color-brand-border: var(--brand-border);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-subtle: var(--brand-subtle);
 
-    --color-ink: var(--ink);
-    --color-ink-muted: var(--ink-muted);
-    --color-ink-dim: var(--ink-dim);
-    --color-ink-faint: var(--ink-faint);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-dim: var(--ink-dim);
+  --color-ink-faint: var(--ink-faint);
 
-    --color-canvas: var(--canvas);
-    --color-surface-1: var(--surface-1);
-    --color-surface-2: var(--surface-2);
-    --color-surface-3: var(--surface-3);
-    --color-surface-4: var(--surface-4);
+  --color-canvas: var(--canvas);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-surface-4: var(--surface-4);
 
-    --color-hairline: var(--hairline);
-    --color-hairline-soft: var(--hairline-soft);
-    --color-hairline-strong: var(--hairline-strong);
+  --color-hairline: var(--hairline);
+  --color-hairline-soft: var(--hairline-soft);
+  --color-hairline-strong: var(--hairline-strong);
 
-    --color-blue-accent: var(--blue-accent);
-    --color-error-text: var(--error-text);
+  --color-blue-accent: var(--blue-accent);
+  --color-error-text: var(--error-text);
 
-    /* ---- Semantic status set -------------------------------------------- */
-    --color-success: var(--success);
-    --color-success-foreground: var(--success-foreground);
-    --color-success-surface: var(--success-surface);
-    --color-success-border: var(--success-border);
+  /* ---- Semantic status set -------------------------------------------- */
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-surface: var(--success-surface);
+  --color-success-border: var(--success-border);
 
-    --color-warning: var(--warning);
-    --color-warning-foreground: var(--warning-foreground);
-    --color-warning-surface: var(--warning-surface);
-    --color-warning-border: var(--warning-border);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-surface: var(--warning-surface);
+  --color-warning-border: var(--warning-border);
 
-    --color-danger: var(--danger);
-    --color-danger-foreground: var(--danger-foreground);
-    --color-danger-surface: var(--danger-surface);
-    --color-danger-border: var(--danger-border);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-danger-surface: var(--danger-surface);
+  --color-danger-border: var(--danger-border);
 
-    --color-info: var(--info);
-    --color-info-foreground: var(--info-foreground);
-    --color-info-surface: var(--info-surface);
-    --color-info-border: var(--info-border);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-surface: var(--info-surface);
+  --color-info-border: var(--info-border);
 
-    /* ---- Raw Radix scales (12 steps each, theme-aware) ------------------- */
-    --color-mauve-black: var(--mauve-black);
-    --color-mauve-1: var(--mauve-1);
-    --color-mauve-2: var(--mauve-2);
-    --color-mauve-3: var(--mauve-3);
-    --color-mauve-4: var(--mauve-4);
-    --color-mauve-5: var(--mauve-5);
-    --color-mauve-6: var(--mauve-6);
-    --color-mauve-7: var(--mauve-7);
-    --color-mauve-8: var(--mauve-8);
-    --color-mauve-9: var(--mauve-9);
-    --color-mauve-10: var(--mauve-10);
-    --color-mauve-11: var(--mauve-11);
-    --color-mauve-12: var(--mauve-12);
+  /* ---- Raw Radix scales (12 steps each, theme-aware) ------------------- */
+  --color-mauve-black: var(--mauve-black);
+  --color-mauve-1: var(--mauve-1);
+  --color-mauve-2: var(--mauve-2);
+  --color-mauve-3: var(--mauve-3);
+  --color-mauve-4: var(--mauve-4);
+  --color-mauve-5: var(--mauve-5);
+  --color-mauve-6: var(--mauve-6);
+  --color-mauve-7: var(--mauve-7);
+  --color-mauve-8: var(--mauve-8);
+  --color-mauve-9: var(--mauve-9);
+  --color-mauve-10: var(--mauve-10);
+  --color-mauve-11: var(--mauve-11);
+  --color-mauve-12: var(--mauve-12);
 
-    --color-grass-1: var(--grass-1);
-    --color-grass-2: var(--grass-2);
-    --color-grass-3: var(--grass-3);
-    --color-grass-4: var(--grass-4);
-    --color-grass-5: var(--grass-5);
-    --color-grass-6: var(--grass-6);
-    --color-grass-7: var(--grass-7);
-    --color-grass-8: var(--grass-8);
-    --color-grass-9: var(--grass-9);
-    --color-grass-10: var(--grass-10);
-    --color-grass-11: var(--grass-11);
-    --color-grass-12: var(--grass-12);
+  --color-grass-1: var(--grass-1);
+  --color-grass-2: var(--grass-2);
+  --color-grass-3: var(--grass-3);
+  --color-grass-4: var(--grass-4);
+  --color-grass-5: var(--grass-5);
+  --color-grass-6: var(--grass-6);
+  --color-grass-7: var(--grass-7);
+  --color-grass-8: var(--grass-8);
+  --color-grass-9: var(--grass-9);
+  --color-grass-10: var(--grass-10);
+  --color-grass-11: var(--grass-11);
+  --color-grass-12: var(--grass-12);
 
-    --color-blue-1: var(--blue-1);
-    --color-blue-2: var(--blue-2);
-    --color-blue-3: var(--blue-3);
-    --color-blue-4: var(--blue-4);
-    --color-blue-5: var(--blue-5);
-    --color-blue-6: var(--blue-6);
-    --color-blue-7: var(--blue-7);
-    --color-blue-8: var(--blue-8);
-    --color-blue-9: var(--blue-9);
-    --color-blue-10: var(--blue-10);
-    --color-blue-11: var(--blue-11);
-    --color-blue-12: var(--blue-12);
+  --color-blue-1: var(--blue-1);
+  --color-blue-2: var(--blue-2);
+  --color-blue-3: var(--blue-3);
+  --color-blue-4: var(--blue-4);
+  --color-blue-5: var(--blue-5);
+  --color-blue-6: var(--blue-6);
+  --color-blue-7: var(--blue-7);
+  --color-blue-8: var(--blue-8);
+  --color-blue-9: var(--blue-9);
+  --color-blue-10: var(--blue-10);
+  --color-blue-11: var(--blue-11);
+  --color-blue-12: var(--blue-12);
 
-    --color-red-1: var(--red-1);
-    --color-red-2: var(--red-2);
-    --color-red-3: var(--red-3);
-    --color-red-4: var(--red-4);
-    --color-red-5: var(--red-5);
-    --color-red-6: var(--red-6);
-    --color-red-7: var(--red-7);
-    --color-red-8: var(--red-8);
-    --color-red-9: var(--red-9);
-    --color-red-10: var(--red-10);
-    --color-red-11: var(--red-11);
-    --color-red-12: var(--red-12);
+  --color-red-1: var(--red-1);
+  --color-red-2: var(--red-2);
+  --color-red-3: var(--red-3);
+  --color-red-4: var(--red-4);
+  --color-red-5: var(--red-5);
+  --color-red-6: var(--red-6);
+  --color-red-7: var(--red-7);
+  --color-red-8: var(--red-8);
+  --color-red-9: var(--red-9);
+  --color-red-10: var(--red-10);
+  --color-red-11: var(--red-11);
+  --color-red-12: var(--red-12);
 
-    --color-amber-1: var(--amber-1);
-    --color-amber-2: var(--amber-2);
-    --color-amber-3: var(--amber-3);
-    --color-amber-4: var(--amber-4);
-    --color-amber-5: var(--amber-5);
-    --color-amber-6: var(--amber-6);
-    --color-amber-7: var(--amber-7);
-    --color-amber-8: var(--amber-8);
-    --color-amber-9: var(--amber-9);
-    --color-amber-10: var(--amber-10);
-    --color-amber-11: var(--amber-11);
-    --color-amber-12: var(--amber-12);
+  --color-amber-1: var(--amber-1);
+  --color-amber-2: var(--amber-2);
+  --color-amber-3: var(--amber-3);
+  --color-amber-4: var(--amber-4);
+  --color-amber-5: var(--amber-5);
+  --color-amber-6: var(--amber-6);
+  --color-amber-7: var(--amber-7);
+  --color-amber-8: var(--amber-8);
+  --color-amber-9: var(--amber-9);
+  --color-amber-10: var(--amber-10);
+  --color-amber-11: var(--amber-11);
+  --color-amber-12: var(--amber-12);
 }
 
 /* --------------------------------------------------------------------------
@@ -189,118 +220,177 @@
    -------------------------------------------------------------------------- */
 
 @theme {
-    /* ---- Type scale (Design.md `typography:` block) ---------------------- */
-    --text-display-xl: 3.75rem;          /* 60px — hero h1 */
-    --text-display-xl--line-height: 3.75rem;
-    --text-display-xl--letter-spacing: -1.5px;
-    --text-display-xl--font-weight: 700;
+  /* ---- Type scale (Design.md `typography:` block) ---------------------- */
+  --text-display-xl: 3.75rem; /* 60px — hero h1 */
+  --text-display-xl--line-height: 3.75rem;
+  --text-display-xl--letter-spacing: -1.5px;
+  --text-display-xl--font-weight: 700;
 
-    --text-display-md: 3rem;             /* 48px — section h2 */
-    --text-display-md--line-height: 3rem;
-    --text-display-md--letter-spacing: -1.2px;
-    --text-display-md--font-weight: 700;
+  --text-display-md: 3rem; /* 48px — section h2 */
+  --text-display-md--line-height: 3rem;
+  --text-display-md--letter-spacing: -1.2px;
+  --text-display-md--font-weight: 700;
 
-    --text-heading-lg: 1.25rem;          /* 20px / 600 — card headings */
-    --text-heading-lg--line-height: 1.75rem;
-    --text-heading-lg--letter-spacing: 0px;
-    --text-heading-lg--font-weight: 600;
+  --text-heading-lg: 1.25rem; /* 20px / 600 — card headings */
+  --text-heading-lg--line-height: 1.75rem;
+  --text-heading-lg--letter-spacing: 0px;
+  --text-heading-lg--font-weight: 600;
 
-    --text-heading-md: 1.25rem;          /* 20px / 500 — tighter variant */
-    --text-heading-md--line-height: 1.75rem;
-    --text-heading-md--letter-spacing: -0.5px;
-    --text-heading-md--font-weight: 500;
+  --text-heading-md: 1.25rem; /* 20px / 500 — tighter variant */
+  --text-heading-md--line-height: 1.75rem;
+  --text-heading-md--letter-spacing: -0.5px;
+  --text-heading-md--font-weight: 500;
 
-    --text-heading-sm: 1.125rem;         /* 18px / 500 — h3 feature cells */
-    --text-heading-sm--line-height: 1.546875rem;
-    --text-heading-sm--letter-spacing: -0.45px;
-    --text-heading-sm--font-weight: 500;
+  --text-heading-sm: 1.125rem; /* 18px / 500 — h3 feature cells */
+  --text-heading-sm--line-height: 1.546875rem;
+  --text-heading-sm--letter-spacing: -0.45px;
+  --text-heading-sm--font-weight: 500;
 
-    --text-body-lg: 1.125rem;            /* 18px — hero sub-paragraph */
-    --text-body-lg--line-height: 1.75rem;
-    --text-body-lg--letter-spacing: 0px;
-    --text-body-lg--font-weight: 400;
+  --text-body-lg: 1.125rem; /* 18px — hero sub-paragraph */
+  --text-body-lg--line-height: 1.75rem;
+  --text-body-lg--letter-spacing: 0px;
+  --text-body-lg--font-weight: 400;
 
-    --text-body-md: 1rem;                /* 16px — running text */
-    --text-body-md--line-height: 1.5rem;
-    --text-body-md--letter-spacing: 0px;
-    --text-body-md--font-weight: 400;
+  --text-body-md: 1rem; /* 16px — running text */
+  --text-body-md--line-height: 1.5rem;
+  --text-body-md--letter-spacing: 0px;
+  --text-body-md--font-weight: 400;
 
-    --text-body-sm: 0.875rem;            /* 14px — card copy */
-    --text-body-sm--line-height: 1.25rem;
-    --text-body-sm--letter-spacing: 0px;
-    --text-body-sm--font-weight: 400;
+  --text-body-sm: 0.875rem; /* 14px — card copy */
+  --text-body-sm--line-height: 1.25rem;
+  --text-body-sm--letter-spacing: 0px;
+  --text-body-sm--font-weight: 400;
 
-    --text-label-md: 0.875rem;           /* 14px / 500 — badges, stats */
-    --text-label-md--line-height: 1.25rem;
-    --text-label-md--letter-spacing: 0px;
-    --text-label-md--font-weight: 500;
+  --text-label-md: 0.875rem; /* 14px / 500 — badges, stats */
+  --text-label-md--line-height: 1.25rem;
+  --text-label-md--letter-spacing: 0px;
+  --text-label-md--font-weight: 500;
 
-    --text-label-sm: 0.75rem;            /* 12px / 500 — chips */
-    --text-label-sm--line-height: 1rem;
-    --text-label-sm--letter-spacing: 0.3px;
-    --text-label-sm--font-weight: 500;
+  --text-label-sm: 0.75rem; /* 12px / 500 — chips */
+  --text-label-sm--line-height: 1rem;
+  --text-label-sm--letter-spacing: 0.3px;
+  --text-label-sm--font-weight: 500;
 
-    --text-label-caps: 0.75rem;          /* 12px / 700 — eyebrow labels */
-    --text-label-caps--line-height: 1rem;
-    --text-label-caps--letter-spacing: 0px;
-    --text-label-caps--font-weight: 700;
+  --text-label-caps: 0.75rem; /* 12px / 700 — eyebrow labels */
+  --text-label-caps--line-height: 1rem;
+  --text-label-caps--letter-spacing: 0px;
+  --text-label-caps--font-weight: 700;
 
-    --text-nav-link: 0.9375rem;          /* 15px / 500 — top-nav */
-    --text-nav-link--line-height: 0.9375rem;
-    --text-nav-link--letter-spacing: 0px;
-    --text-nav-link--font-weight: 500;
+  --text-nav-link: 0.9375rem; /* 15px / 500 — top-nav */
+  --text-nav-link--line-height: 0.9375rem;
+  --text-nav-link--letter-spacing: 0px;
+  --text-nav-link--font-weight: 500;
 
-    --text-button-md: 0.875rem;          /* 14px / 400 — CTA label */
-    --text-button-md--line-height: 1.25rem;
-    --text-button-md--letter-spacing: 0px;
-    --text-button-md--font-weight: 400;
+  --text-button-md: 0.875rem; /* 14px / 400 — CTA label */
+  --text-button-md--line-height: 1.25rem;
+  --text-button-md--letter-spacing: 0px;
+  --text-button-md--font-weight: 400;
 
-    --text-mono-sm: 0.875rem;            /* 14px — CI log, code strips */
-    --text-mono-sm--line-height: 1.25rem;
-    --text-mono-sm--letter-spacing: 0px;
-    --text-mono-sm--font-weight: 400;
+  --text-mono-sm: 0.875rem; /* 14px — CI log, code strips */
+  --text-mono-sm--line-height: 1.25rem;
+  --text-mono-sm--letter-spacing: 0px;
+  --text-mono-sm--font-weight: 400;
 
-    --text-caption: 0.75rem;             /* 12px — metadata, timestamps */
-    --text-caption--line-height: 1rem;
-    --text-caption--letter-spacing: 0px;
-    --text-caption--font-weight: 400;
+  --text-caption: 0.75rem; /* 12px — metadata, timestamps */
+  --text-caption--line-height: 1rem;
+  --text-caption--letter-spacing: 0px;
+  --text-caption--font-weight: 400;
 
-    /* ---- Tracking -------------------------------------------------------- */
-    --tracking-display-xl: -1.5px;
-    --tracking-display-md: -1.2px;
-    --tracking-heading: -0.5px;
-    --tracking-normal: 0px;
-    --tracking-label: 0.3px;
+  /* ---- Tracking -------------------------------------------------------- */
+  --tracking-display-xl: -1.5px;
+  --tracking-display-md: -1.2px;
+  --tracking-heading: -0.5px;
+  --tracking-normal: 0px;
+  --tracking-label: 0.3px;
 
-    /* ---- Radius — compact + technical, nothing above 10px in the spec ---- */
-    --radius: 0.5rem;                    /* 8px base (CTA, cards) */
-    --radius-none: 0px;
-    --radius-xs: 0.125rem;               /* 2px — chips, tags */
-    --radius-sm: 0.25rem;                /* 4px — nav hover, small surfaces */
-    --radius-md: 0.375rem;               /* 6px — inputs, code blocks, modals */
-    --radius-lg: 0.5rem;                 /* 8px — buttons, benchmark cards */
-    --radius-xl: 0.625rem;               /* 10px — feature cards (spec ceiling) */
-    --radius-2xl: 0.75rem;               /* 12px — off-spec, kept for shadcn */
-    --radius-3xl: 0.875rem;              /* 14px — off-spec, kept for shadcn */
-    --radius-4xl: 1rem;                  /* 16px — off-spec, kept for shadcn */
-    --radius-full: 9999px;
+  /* ---- Radius — compact + technical, nothing above 10px in the spec ---- */
+  --radius: 0.5rem; /* 8px base (CTA, cards) */
+  --radius-none: 0px;
+  --radius-xs: 0.125rem; /* 2px — chips, tags */
+  --radius-sm: 0.25rem; /* 4px — nav hover, small surfaces */
+  --radius-md: 0.375rem; /* 6px — inputs, code blocks, modals */
+  --radius-lg: 0.5rem; /* 8px — buttons, benchmark cards */
+  --radius-xl: 0.625rem; /* 10px — feature cards (spec ceiling) */
+  --radius-2xl: 0.75rem; /* 12px — off-spec, kept for shadcn */
+  --radius-3xl: 0.875rem; /* 14px — off-spec, kept for shadcn */
+  --radius-4xl: 1rem; /* 16px — off-spec, kept for shadcn */
+  --radius-full: 9999px;
 
-    /* ---- Spacing (8px module, 16px co-dominant) -------------------------- */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 12px;
-    --spacing-base: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-    --spacing-2xl: 48px;
-    --spacing-3xl: 64px;
-    --spacing-section: 96px;             /* vertical band rhythm: 64-96px */
+  /* ---- Spacing (8px module, 16px co-dominant) -------------------------- */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-base: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-section: 96px; /* vertical band rhythm: 64-96px */
 
-    /* ---- Container ------------------------------------------------------- */
-    --container-content: 1152px;         /* extracted hero width */
+  /* ---- Container ------------------------------------------------------- */
+  --container-content: 1280px; /* page content width */
 
-    /* ---- Elevation — the system has no shadow tier; depth is tonal ------- */
-    --shadow-none: 0 0 #0000;
+  /* ---- Elevation — the system has no shadow tier; depth is tonal ------- */
+  --shadow-none: 0 0 #0000;
+
+  /* ---- Hero pipeline — one 4s cycle shared by the runner and the steps -- */
+  --animate-pipeline-run: pipeline-run 4s linear infinite;
+  --animate-pipeline-dot: pipeline-dot 4s ease-out infinite;
+  --animate-pipeline-label: pipeline-label 4s ease-out infinite;
+
+  /* ---- Hero entrance on page load ------------------------------------- */
+  --animate-hero-in: hero-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  --animate-hero-in-slow: hero-in 2s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+
+  @keyframes hero-in {
+    from {
+      opacity: 0;
+      translate: 0 16px;
+    }
+  }
+
+  @keyframes pipeline-run {
+    0% {
+      left: 0%;
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    70% {
+      left: 100%;
+      opacity: 1;
+    }
+    80%,
+    100% {
+      left: 100%;
+      opacity: 0;
+    }
+  }
+
+  @keyframes pipeline-dot {
+    0%,
+    15% {
+      border-color: var(--brand);
+      background-color: var(--brand);
+    }
+    35%,
+    100% {
+      border-color: var(--hairline-strong);
+      background-color: var(--canvas);
+    }
+  }
+
+  @keyframes pipeline-label {
+    0%,
+    15% {
+      color: var(--brand);
+    }
+    35%,
+    100% {
+      color: var(--ink-dim);
+    }
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -309,171 +399,171 @@
 
 :root,
 .dark {
-    color-scheme: dark;
+  color-scheme: dark;
 
-    /* ---- Radix Mauve dark ------------------------------------------------ */
-    --mauve-black: #04040b;
-    --mauve-1: #121113;
-    --mauve-2: #1a191b;
-    --mauve-3: #232225;
-    --mauve-4: #2b292d;
-    --mauve-5: #323035;
-    --mauve-6: #3c393f;
-    --mauve-7: #49474e;
-    --mauve-8: #625f69;
-    --mauve-9: #6f6d78;
-    --mauve-10: #7c7a85;
-    --mauve-11: #b5b2bc;
-    --mauve-12: #eeeef0;
+  /* ---- Radix Mauve dark ------------------------------------------------ */
+  --mauve-black: #04040b;
+  --mauve-1: #121113;
+  --mauve-2: #1a191b;
+  --mauve-3: #232225;
+  --mauve-4: #2b292d;
+  --mauve-5: #323035;
+  --mauve-6: #3c393f;
+  --mauve-7: #49474e;
+  --mauve-8: #625f69;
+  --mauve-9: #6f6d78;
+  --mauve-10: #7c7a85;
+  --mauve-11: #b5b2bc;
+  --mauve-12: #eeeef0;
 
-    /* ---- Radix Grass dark ------------------------------------------------ */
-    --grass-1: #0e1511;
-    --grass-2: #141a15;
-    --grass-3: #1b2a1e;
-    --grass-4: #1d3a24;
-    --grass-5: #25482d;
-    --grass-6: #2d5736;
-    --grass-7: #366740;
-    --grass-8: #3e7949;
-    --grass-9: #46a758;
-    --grass-10: #53b365;
-    --grass-11: #71d083;
-    --grass-12: #c2f0c2;
+  /* ---- Radix Grass dark ------------------------------------------------ */
+  --grass-1: #0e1511;
+  --grass-2: #141a15;
+  --grass-3: #1b2a1e;
+  --grass-4: #1d3a24;
+  --grass-5: #25482d;
+  --grass-6: #2d5736;
+  --grass-7: #366740;
+  --grass-8: #3e7949;
+  --grass-9: #46a758;
+  --grass-10: #53b365;
+  --grass-11: #71d083;
+  --grass-12: #c2f0c2;
 
-    /* ---- Radix Blue dark (links only) ------------------------------------ */
-    --blue-1: #0d1520;
-    --blue-2: #111927;
-    --blue-3: #0d2847;
-    --blue-4: #003362;
-    --blue-5: #004074;
-    --blue-6: #104d87;
-    --blue-7: #205d9e;
-    --blue-8: #2870bd;
-    --blue-9: #0090ff;
-    --blue-10: #3b9eff;
-    --blue-11: #70b8ff;
-    --blue-12: #c2e6ff;
+  /* ---- Radix Blue dark (links only) ------------------------------------ */
+  --blue-1: #0d1520;
+  --blue-2: #111927;
+  --blue-3: #0d2847;
+  --blue-4: #003362;
+  --blue-5: #004074;
+  --blue-6: #104d87;
+  --blue-7: #205d9e;
+  --blue-8: #2870bd;
+  --blue-9: #0090ff;
+  --blue-10: #3b9eff;
+  --blue-11: #70b8ff;
+  --blue-12: #c2e6ff;
 
-    /* ---- Radix Red dark (errors only) ------------------------------------ */
-    --red-1: #191111;
-    --red-2: #201314;
-    --red-3: #3b1219;
-    --red-4: #500f1c;
-    --red-5: #611623;
-    --red-6: #72232d;
-    --red-7: #8c333a;
-    --red-8: #b54548;
-    --red-9: #e5484d;
-    --red-10: #ec5d5e;
-    --red-11: #ff9592;
-    --red-12: #ffd1d9;
+  /* ---- Radix Red dark (errors only) ------------------------------------ */
+  --red-1: #191111;
+  --red-2: #201314;
+  --red-3: #3b1219;
+  --red-4: #500f1c;
+  --red-5: #611623;
+  --red-6: #72232d;
+  --red-7: #8c333a;
+  --red-8: #b54548;
+  --red-9: #e5484d;
+  --red-10: #ec5d5e;
+  --red-11: #ff9592;
+  --red-12: #ffd1d9;
 
-    /* ---- Radix Amber dark (warnings) ------------------------------------- */
-    --amber-1: #16120c;
-    --amber-2: #1d180f;
-    --amber-3: #302008;
-    --amber-4: #3f2700;
-    --amber-5: #4d3000;
-    --amber-6: #5c3d05;
-    --amber-7: #714f19;
-    --amber-8: #8f6424;
-    --amber-9: #ffc53d;
-    --amber-10: #ffd60a;
-    --amber-11: #ffca16;
-    --amber-12: #ffe7b3;
+  /* ---- Radix Amber dark (warnings) ------------------------------------- */
+  --amber-1: #16120c;
+  --amber-2: #1d180f;
+  --amber-3: #302008;
+  --amber-4: #3f2700;
+  --amber-5: #4d3000;
+  --amber-6: #5c3d05;
+  --amber-7: #714f19;
+  --amber-8: #8f6424;
+  --amber-9: #ffc53d;
+  --amber-10: #ffd60a;
+  --amber-11: #ffca16;
+  --amber-12: #ffe7b3;
 
-    /* ---- Depot named tokens ---------------------------------------------- */
-    --brand: var(--grass-11);            /* #71d083 — grass text / foreground */
-    --brand-fill: var(--grass-4);        /* #1d3a24 — CTA + stat-badge fill */
-    --brand-fill-deep: var(--grass-3);   /* #1b2a1e — CI log strip fill */
-    --brand-mid: var(--grass-7);         /* #366740 — CTA + card border */
-    --brand-border: var(--grass-6);      /* #2d5736 — soft green border */
-    --brand-strong: var(--grass-9);      /* #46a758 — saturated green */
-    --brand-subtle: var(--grass-5);      /* #25482d — hover on green surfaces */
+  /* ---- Depot named tokens ---------------------------------------------- */
+  --brand: var(--grass-11); /* #71d083 — grass text / foreground */
+  --brand-fill: var(--grass-4); /* #1d3a24 — CTA + stat-badge fill */
+  --brand-fill-deep: var(--grass-3); /* #1b2a1e — CI log strip fill */
+  --brand-mid: var(--grass-7); /* #366740 — CTA + card border */
+  --brand-border: var(--grass-6); /* #2d5736 — soft green border */
+  --brand-strong: var(--grass-9); /* #46a758 — saturated green */
+  --brand-subtle: var(--grass-5); /* #25482d — hover on green surfaces */
 
-    --ink: var(--mauve-12);              /* #eeeef0 — headings, emphasis */
-    --ink-muted: var(--mauve-11);        /* #b5b2bc — body prose, nav links */
-    --ink-dim: var(--mauve-10);          /* #7c7a85 — footer, inactive */
-    --ink-faint: var(--mauve-9);         /* #6f6d78 — disabled, placeholder */
+  --ink: var(--mauve-12); /* #eeeef0 — headings, emphasis */
+  --ink-muted: var(--mauve-11); /* #b5b2bc — body prose, nav links */
+  --ink-dim: var(--mauve-10); /* #7c7a85 — footer, inactive */
+  --ink-faint: var(--mauve-9); /* #6f6d78 — disabled, placeholder */
 
-    --canvas: var(--mauve-black);        /* #04040b — page floor */
-    --surface-1: var(--mauve-1);         /* #121113 — content panels */
-    --surface-2: var(--mauve-2);         /* #1a191b — benchmark cards */
-    --surface-3: var(--mauve-5);         /* #323035 — hover, elevated panels */
-    --surface-4: var(--mauve-3);         /* #232225 — intermediate step */
+  --canvas: var(--mauve-black); /* #04040b — page floor */
+  --surface-1: var(--mauve-1); /* #121113 — content panels */
+  --surface-2: var(--mauve-2); /* #1a191b — benchmark cards */
+  --surface-3: var(--mauve-5); /* #323035 — hover, elevated panels */
+  --surface-4: var(--mauve-3); /* #232225 — intermediate step */
 
-    --hairline: var(--mauve-6);          /* #3c393f — primary border */
-    --hairline-soft: var(--mauve-7);     /* #49474e — secondary divider */
-    --hairline-strong: var(--mauve-8);   /* #625f69 — emphasis border */
+  --hairline: var(--mauve-6); /* #3c393f — primary border */
+  --hairline-soft: var(--mauve-7); /* #49474e — secondary divider */
+  --hairline-strong: var(--mauve-8); /* #625f69 — emphasis border */
 
-    --blue-accent: var(--blue-11);       /* #70b8ff — hyperlinks, inline code */
-    --error-text: var(--red-11);         /* #ff9592 — failed-build labels */
+  --blue-accent: var(--blue-11); /* #70b8ff — hyperlinks, inline code */
+  --error-text: var(--red-11); /* #ff9592 — failed-build labels */
 
-    /* ---- shadcn semantic surface ----------------------------------------- */
-    --background: var(--canvas);
-    --foreground: var(--ink);
-    --card: var(--surface-1);
-    --card-foreground: var(--ink);
-    --popover: var(--surface-2);
-    --popover-foreground: var(--ink);
+  /* ---- shadcn semantic surface ----------------------------------------- */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--surface-1);
+  --card-foreground: var(--ink);
+  --popover: var(--surface-2);
+  --popover-foreground: var(--ink);
 
-    /* The signature CTA: dark-green fill, grass-green label, mid-green edge. */
-    --primary: var(--grass-4);
-    --primary-foreground: var(--grass-11);
-    --primary-border: var(--grass-7);
+  /* The signature CTA: dark-green fill, grass-green label, mid-green edge. */
+  --primary: var(--grass-4);
+  --primary-foreground: var(--grass-11);
+  --primary-border: var(--grass-7);
 
-    --secondary: var(--surface-2);
-    --secondary-foreground: var(--ink);
-    --muted: var(--surface-2);
-    --muted-foreground: var(--ink-dim);
-    --accent: var(--surface-3);
-    --accent-foreground: var(--ink);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--ink-dim);
+  --accent: var(--surface-3);
+  --accent-foreground: var(--ink);
 
-    --destructive: var(--red-9);
-    --destructive-foreground: var(--red-12);
+  --destructive: var(--red-9);
+  --destructive-foreground: var(--red-12);
 
-    --border: var(--hairline);
-    --input: var(--hairline);
-    --input-background: var(--surface-2);
-    --ring: var(--grass-7);
+  --border: var(--hairline);
+  --input: var(--hairline);
+  --input-background: var(--surface-2);
+  --ring: var(--grass-7);
 
-    /* ---- Status set ------------------------------------------------------ */
-    --success: var(--grass-11);
-    --success-foreground: var(--grass-11);
-    --success-surface: var(--grass-3);
-    --success-border: var(--grass-6);
+  /* ---- Status set ------------------------------------------------------ */
+  --success: var(--grass-11);
+  --success-foreground: var(--grass-11);
+  --success-surface: var(--grass-3);
+  --success-border: var(--grass-6);
 
-    --warning: var(--amber-11);
-    --warning-foreground: var(--amber-11);
-    --warning-surface: var(--amber-3);
-    --warning-border: var(--amber-6);
+  --warning: var(--amber-11);
+  --warning-foreground: var(--amber-11);
+  --warning-surface: var(--amber-3);
+  --warning-border: var(--amber-6);
 
-    --danger: var(--red-11);
-    --danger-foreground: var(--red-11);
-    --danger-surface: var(--red-3);
-    --danger-border: var(--red-6);
+  --danger: var(--red-11);
+  --danger-foreground: var(--red-11);
+  --danger-surface: var(--red-3);
+  --danger-border: var(--red-6);
 
-    --info: var(--blue-11);
-    --info-foreground: var(--blue-11);
-    --info-surface: var(--blue-3);
-    --info-border: var(--blue-6);
+  --info: var(--blue-11);
+  --info-foreground: var(--blue-11);
+  --info-surface: var(--blue-3);
+  --info-border: var(--blue-6);
 
-    /* ---- Charts ---------------------------------------------------------- */
-    --chart-1: var(--grass-11);
-    --chart-2: var(--blue-11);
-    --chart-3: var(--grass-9);
-    --chart-4: var(--mauve-10);
-    --chart-5: var(--amber-11);
+  /* ---- Charts ---------------------------------------------------------- */
+  --chart-1: var(--grass-11);
+  --chart-2: var(--blue-11);
+  --chart-3: var(--grass-9);
+  --chart-4: var(--mauve-10);
+  --chart-5: var(--amber-11);
 
-    /* ---- Sidebar --------------------------------------------------------- */
-    --sidebar: var(--surface-1);
-    --sidebar-foreground: var(--ink);
-    --sidebar-primary: var(--grass-4);
-    --sidebar-primary-foreground: var(--grass-11);
-    --sidebar-accent: var(--surface-3);
-    --sidebar-accent-foreground: var(--ink);
-    --sidebar-border: var(--hairline);
-    --sidebar-ring: var(--grass-7);
+  /* ---- Sidebar --------------------------------------------------------- */
+  --sidebar: var(--surface-1);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--grass-4);
+  --sidebar-primary-foreground: var(--grass-11);
+  --sidebar-accent: var(--surface-3);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--grass-7);
 }
 
 /* --------------------------------------------------------------------------
@@ -483,170 +573,170 @@
    -------------------------------------------------------------------------- */
 
 .light {
-    color-scheme: light;
+  color-scheme: light;
 
-    /* ---- Radix Mauve light ------------------------------------------------ */
-    --mauve-black: #04040b;
-    --mauve-1: #fdfcfd;
-    --mauve-2: #faf9fb;
-    --mauve-3: #f2eff3;
-    --mauve-4: #eae7ec;
-    --mauve-5: #e3dfe6;
-    --mauve-6: #dbd8e0;
-    --mauve-7: #d0cdd7;
-    --mauve-8: #bcbac7;
-    --mauve-9: #8e8c99;
-    --mauve-10: #84828e;
-    --mauve-11: #65636d;
-    --mauve-12: #211f26;
+  /* ---- Radix Mauve light ------------------------------------------------ */
+  --mauve-black: #04040b;
+  --mauve-1: #fdfcfd;
+  --mauve-2: #faf9fb;
+  --mauve-3: #f2eff3;
+  --mauve-4: #eae7ec;
+  --mauve-5: #e3dfe6;
+  --mauve-6: #dbd8e0;
+  --mauve-7: #d0cdd7;
+  --mauve-8: #bcbac7;
+  --mauve-9: #8e8c99;
+  --mauve-10: #84828e;
+  --mauve-11: #65636d;
+  --mauve-12: #211f26;
 
-    /* ---- Radix Grass light ------------------------------------------------ */
-    --grass-1: #fbfefb;
-    --grass-2: #f5fbf5;
-    --grass-3: #e9f6e9;
-    --grass-4: #daf1db;
-    --grass-5: #c9e8ca;
-    --grass-6: #b2ddb5;
-    --grass-7: #94ce9a;
-    --grass-8: #65ba74;
-    --grass-9: #46a758;
-    --grass-10: #3e9b4f;
-    --grass-11: #2a7e3b;
-    --grass-12: #203c25;
+  /* ---- Radix Grass light ------------------------------------------------ */
+  --grass-1: #fbfefb;
+  --grass-2: #f5fbf5;
+  --grass-3: #e9f6e9;
+  --grass-4: #daf1db;
+  --grass-5: #c9e8ca;
+  --grass-6: #b2ddb5;
+  --grass-7: #94ce9a;
+  --grass-8: #65ba74;
+  --grass-9: #46a758;
+  --grass-10: #3e9b4f;
+  --grass-11: #2a7e3b;
+  --grass-12: #203c25;
 
-    /* ---- Radix Blue light -------------------------------------------------- */
-    --blue-1: #fbfdff;
-    --blue-2: #f4faff;
-    --blue-3: #e6f4fe;
-    --blue-4: #d5efff;
-    --blue-5: #c2e5ff;
-    --blue-6: #acd8fc;
-    --blue-7: #8ec8f6;
-    --blue-8: #5eb1ef;
-    --blue-9: #0090ff;
-    --blue-10: #0588f0;
-    --blue-11: #0d74ce;
-    --blue-12: #113264;
+  /* ---- Radix Blue light -------------------------------------------------- */
+  --blue-1: #fbfdff;
+  --blue-2: #f4faff;
+  --blue-3: #e6f4fe;
+  --blue-4: #d5efff;
+  --blue-5: #c2e5ff;
+  --blue-6: #acd8fc;
+  --blue-7: #8ec8f6;
+  --blue-8: #5eb1ef;
+  --blue-9: #0090ff;
+  --blue-10: #0588f0;
+  --blue-11: #0d74ce;
+  --blue-12: #113264;
 
-    /* ---- Radix Red light --------------------------------------------------- */
-    --red-1: #fffcfc;
-    --red-2: #fff7f7;
-    --red-3: #feebec;
-    --red-4: #ffdbdc;
-    --red-5: #ffcdce;
-    --red-6: #fdbdbe;
-    --red-7: #f4a9aa;
-    --red-8: #eb8e90;
-    --red-9: #e5484d;
-    --red-10: #dc3e42;
-    --red-11: #ce2c31;
-    --red-12: #641723;
+  /* ---- Radix Red light --------------------------------------------------- */
+  --red-1: #fffcfc;
+  --red-2: #fff7f7;
+  --red-3: #feebec;
+  --red-4: #ffdbdc;
+  --red-5: #ffcdce;
+  --red-6: #fdbdbe;
+  --red-7: #f4a9aa;
+  --red-8: #eb8e90;
+  --red-9: #e5484d;
+  --red-10: #dc3e42;
+  --red-11: #ce2c31;
+  --red-12: #641723;
 
-    /* ---- Radix Amber light -------------------------------------------------- */
-    --amber-1: #fefdfb;
-    --amber-2: #fefbe9;
-    --amber-3: #fff7c2;
-    --amber-4: #ffee9c;
-    --amber-5: #fbe577;
-    --amber-6: #f3d673;
-    --amber-7: #e9c162;
-    --amber-8: #e2a336;
-    --amber-9: #ffc53d;
-    --amber-10: #ffba18;
-    --amber-11: #ab6400;
-    --amber-12: #4f3422;
+  /* ---- Radix Amber light -------------------------------------------------- */
+  --amber-1: #fefdfb;
+  --amber-2: #fefbe9;
+  --amber-3: #fff7c2;
+  --amber-4: #ffee9c;
+  --amber-5: #fbe577;
+  --amber-6: #f3d673;
+  --amber-7: #e9c162;
+  --amber-8: #e2a336;
+  --amber-9: #ffc53d;
+  --amber-10: #ffba18;
+  --amber-11: #ab6400;
+  --amber-12: #4f3422;
 
-    /* ---- Depot named tokens ------------------------------------------------ */
-    --brand: var(--grass-11);
-    --brand-fill: var(--grass-4);
-    --brand-fill-deep: var(--grass-3);
-    --brand-mid: var(--grass-7);
-    --brand-border: var(--grass-6);
-    --brand-strong: var(--grass-9);
-    --brand-subtle: var(--grass-5);
+  /* ---- Depot named tokens ------------------------------------------------ */
+  --brand: var(--grass-11);
+  --brand-fill: var(--grass-4);
+  --brand-fill-deep: var(--grass-3);
+  --brand-mid: var(--grass-7);
+  --brand-border: var(--grass-6);
+  --brand-strong: var(--grass-9);
+  --brand-subtle: var(--grass-5);
 
-    --ink: var(--mauve-12);
-    --ink-muted: var(--mauve-11);
-    --ink-dim: var(--mauve-10);
-    --ink-faint: var(--mauve-9);
+  --ink: var(--mauve-12);
+  --ink-muted: var(--mauve-11);
+  --ink-dim: var(--mauve-10);
+  --ink-faint: var(--mauve-9);
 
-    --canvas: var(--mauve-1);
-    --surface-1: #ffffff;
-    --surface-2: var(--mauve-2);
-    --surface-3: var(--mauve-4);
-    --surface-4: var(--mauve-3);
+  --canvas: var(--mauve-1);
+  --surface-1: #ffffff;
+  --surface-2: var(--mauve-2);
+  --surface-3: var(--mauve-4);
+  --surface-4: var(--mauve-3);
 
-    --hairline: var(--mauve-6);
-    --hairline-soft: var(--mauve-5);
-    --hairline-strong: var(--mauve-8);
+  --hairline: var(--mauve-6);
+  --hairline-soft: var(--mauve-5);
+  --hairline-strong: var(--mauve-8);
 
-    --blue-accent: var(--blue-11);
-    --error-text: var(--red-11);
+  --blue-accent: var(--blue-11);
+  --error-text: var(--red-11);
 
-    /* ---- shadcn semantic surface ------------------------------------------- */
-    --background: var(--canvas);
-    --foreground: var(--ink);
-    --card: var(--surface-1);
-    --card-foreground: var(--ink);
-    --popover: var(--surface-1);
-    --popover-foreground: var(--ink);
+  /* ---- shadcn semantic surface ------------------------------------------- */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--surface-1);
+  --card-foreground: var(--ink);
+  --popover: var(--surface-1);
+  --popover-foreground: var(--ink);
 
-    --primary: var(--grass-4);
-    --primary-foreground: var(--grass-12);
-    --primary-border: var(--grass-7);
+  --primary: var(--grass-4);
+  --primary-foreground: var(--grass-12);
+  --primary-border: var(--grass-7);
 
-    --secondary: var(--surface-2);
-    --secondary-foreground: var(--ink);
-    --muted: var(--mauve-3);
-    --muted-foreground: var(--ink-muted);
-    --accent: var(--mauve-4);
-    --accent-foreground: var(--ink);
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--mauve-3);
+  --muted-foreground: var(--ink-muted);
+  --accent: var(--mauve-4);
+  --accent-foreground: var(--ink);
 
-    --destructive: var(--red-9);
-    --destructive-foreground: var(--red-1);
+  --destructive: var(--red-9);
+  --destructive-foreground: var(--red-1);
 
-    --border: var(--hairline);
-    --input: var(--mauve-7);
-    --input-background: var(--surface-1);
-    --ring: var(--grass-7);
+  --border: var(--hairline);
+  --input: var(--mauve-7);
+  --input-background: var(--surface-1);
+  --ring: var(--grass-7);
 
-    /* ---- Status set --------------------------------------------------------- */
-    --success: var(--grass-11);
-    --success-foreground: var(--grass-11);
-    --success-surface: var(--grass-3);
-    --success-border: var(--grass-6);
+  /* ---- Status set --------------------------------------------------------- */
+  --success: var(--grass-11);
+  --success-foreground: var(--grass-11);
+  --success-surface: var(--grass-3);
+  --success-border: var(--grass-6);
 
-    --warning: var(--amber-11);
-    --warning-foreground: var(--amber-11);
-    --warning-surface: var(--amber-3);
-    --warning-border: var(--amber-6);
+  --warning: var(--amber-11);
+  --warning-foreground: var(--amber-11);
+  --warning-surface: var(--amber-3);
+  --warning-border: var(--amber-6);
 
-    --danger: var(--red-11);
-    --danger-foreground: var(--red-11);
-    --danger-surface: var(--red-3);
-    --danger-border: var(--red-6);
+  --danger: var(--red-11);
+  --danger-foreground: var(--red-11);
+  --danger-surface: var(--red-3);
+  --danger-border: var(--red-6);
 
-    --info: var(--blue-11);
-    --info-foreground: var(--blue-11);
-    --info-surface: var(--blue-3);
-    --info-border: var(--blue-6);
+  --info: var(--blue-11);
+  --info-foreground: var(--blue-11);
+  --info-surface: var(--blue-3);
+  --info-border: var(--blue-6);
 
-    /* ---- Charts -------------------------------------------------------------- */
-    --chart-1: var(--grass-11);
-    --chart-2: var(--blue-11);
-    --chart-3: var(--grass-9);
-    --chart-4: var(--mauve-10);
-    --chart-5: var(--amber-11);
+  /* ---- Charts -------------------------------------------------------------- */
+  --chart-1: var(--grass-11);
+  --chart-2: var(--blue-11);
+  --chart-3: var(--grass-9);
+  --chart-4: var(--mauve-10);
+  --chart-5: var(--amber-11);
 
-    /* ---- Sidebar ------------------------------------------------------------- */
-    --sidebar: var(--mauve-2);
-    --sidebar-foreground: var(--ink);
-    --sidebar-primary: var(--grass-4);
-    --sidebar-primary-foreground: var(--grass-12);
-    --sidebar-accent: var(--mauve-4);
-    --sidebar-accent-foreground: var(--ink);
-    --sidebar-border: var(--hairline);
-    --sidebar-ring: var(--grass-7);
+  /* ---- Sidebar ------------------------------------------------------------- */
+  --sidebar: var(--mauve-2);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--grass-4);
+  --sidebar-primary-foreground: var(--grass-12);
+  --sidebar-accent: var(--mauve-4);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--grass-7);
 }
 
 /* --------------------------------------------------------------------------
@@ -654,34 +744,73 @@
    -------------------------------------------------------------------------- */
 
 @layer base {
-    * {
-        @apply border-border outline-ring/50;
-    }
+  * {
+    @apply border-border outline-ring/50;
+  }
 
-    body {
-        @apply bg-background text-foreground;
-    }
+  body {
+    @apply bg-background text-foreground;
+  }
 
-    button:not(:disabled),
-    [role="button"]:not(:disabled) {
-        cursor: pointer;
-    }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 
-    html {
-        @apply font-sans;
-    }
+  html {
+    @apply font-sans;
+  }
 
-    /* Display cut carries every heading at 20px and above. */
-    h1, h2, h3, h4, h5, h6 {
-        @apply font-display;
-    }
+  /* Display cut carries every heading at 20px and above. */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
 
-    /* Blue is a link-only semantic token — never a fill, never a brand accent. */
-    a {
-        color: inherit;
-    }
+  /* Blue is a link-only semantic token — never a fill, never a brand accent. */
+  a {
+    color: inherit;
+  }
 
-    code, kbd, samp, pre {
-        @apply font-mono;
-    }
+  code,
+  kbd,
+  samp,
+  pre {
+    @apply font-mono;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SCROLL REVEAL
+   `ScrollReveal` adds `.reveal-ready` to <html> once JS runs, so content is
+   never hidden without JS. `[data-reveal]` fades in on its own;
+   `[data-reveal-group]` staggers its direct children (nested groups handle
+   their own children). An animation — not a transition — is used so the
+   hover transitions already on cards keep working.
+   -------------------------------------------------------------------------- */
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    translate: 0 16px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-ready [data-reveal]:not(.is-revealed),
+  .reveal-ready [data-reveal-group]:not(.is-revealed) > :not([data-reveal-group]) {
+    opacity: 0;
+  }
+
+  .reveal-ready [data-reveal].is-revealed:not([data-reveal-instant]),
+  .reveal-ready
+    [data-reveal-group].is-revealed:not([data-reveal-instant])
+    > :not([data-reveal-group]) {
+    animation: reveal-in 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+    animation-delay: var(--reveal-delay, 0ms);
+  }
 }
